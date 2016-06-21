@@ -13,7 +13,8 @@ Project is now running!
 - https://github.com/nodes-php/bugsnag
 - Add to .env BUGSNAG_API_KEY=NO (Will make sure bugsnag is not crashing local, this env will be set when pushing live)
 - Add following to config/app.php
-```/**
+```
+/**
    * Orchesra Service Providers
    */
   Orchestra\Debug\DebugServiceProvider::class,

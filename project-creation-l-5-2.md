@@ -26,3 +26,12 @@ Project is now running!
   
   Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 ```
+- pa dump
+- pa debug (now works, to check your sql queries in runtime, use full tool always use it)
+- php artisan vendor:publish --provider="Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider" --tag=config (publish ide-helper config)
+- change ide-helper.php in /config (since our models are never in app/models)
+```
+  'model_locations' => array(
+      'project/Models',
+  ),
+```

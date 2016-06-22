@@ -34,3 +34,13 @@ Project is now running!
       'project/Models',
   ),
 ```
+
+#### Setup Backend
+- https://github.com/nodes-php/backend
+
+#### Setup Api
+ - There can be issues with composer require, you can try to add it manually, and above laravel in composer, can help:)
+ - https://github.com/nodes-php/api
+ - Right now all the scaffolding is disabled for API. But you can find the files in the vendor/nodes/api - Morten is working on getting the command up again, else take it from another project 
+ 
+ 

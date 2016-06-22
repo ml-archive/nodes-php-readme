@@ -45,6 +45,7 @@ Project is now running!
  
 #### .gitignore
 ```
+.idea/
 /vendor
 /node_modules
 /bower_components
@@ -55,4 +56,9 @@ Homestead.json
 tests/_output/*
 storage/framework/browscap/*
 storage/exports/*
+```
+
+##### Add global .gitignore file to your git configuration
+```
+git config --global core.excludesfile '~/path/to/.gitignore'
 ```

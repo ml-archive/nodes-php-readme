@@ -43,4 +43,16 @@ Project is now running!
  - https://github.com/nodes-php/api
  - Right now all the scaffolding is disabled for API. But you can find the files in the vendor/nodes/api - Morten is working on getting the command up again, else take it from another project 
  
- 
+#### Gitignore
+```
+/vendor
+/node_modules
+/bower_components
+Homestead.yaml
+Homestead.json
+.env
+
+tests/_output/*
+storage/framework/browscap/*
+storage/exports/*
+```

@@ -35,6 +35,7 @@ Project is now running!
   ),
 ```
 
+<<<<<<< Updated upstream
 #### Setup Backend
 - https://github.com/nodes-php/backend
 
@@ -62,3 +63,7 @@ storage/exports/*
 ```
 git config --global core.excludesfile '~/path/to/.gitignore'
 ```
+=======
+####Set up backend, using cache, validation, database & assets
+- https://github.com/nodes-php/backend
+>>>>>>> Stashed changes

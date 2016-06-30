@@ -1,8 +1,22 @@
 How to implement end user reset password feature:
 
-* Set your user model in config: 'nodes.api.auth.model'
+* Set your user model in config: 
 
-* In your controller inject 'Nodes\Api\Auth\ResetPassword\ResetPasswordRepository'
+```
+'nodes.api.auth.model'
+```
+
+for instance:
+
+```
+'model' => Project\Models\Users\User::class,
+```
+
+* In your controller inject 
+
+```
+Nodes\Api\Auth\ResetPassword\ResetPasswordRepository
+```
 
 * In controller method call the following method to send password reset email:
 

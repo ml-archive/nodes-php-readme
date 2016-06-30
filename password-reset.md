@@ -5,7 +5,13 @@ How to implement end user reset password feature:
 * In your controller inject 'Nodes\Api\Auth\ResetPassword\ResetPasswordRepository'
 
 * In controller method call the following method to send password reset email:
+
 ```
 $resetPasswordRepository->sendResetPasswordEmail(['email' => $request['email']]);
 ```
 
+* Install nodes/api package and run:
+
+```
+php artisan vendor:publish --provider="Nodes\Api\ServiceProvider" 
+```

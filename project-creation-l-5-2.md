@@ -35,14 +35,13 @@ Project is now running!
   ),
 ```
 
-<<<<<<< Updated upstream
 #### Setup Backend
 - https://github.com/nodes-php/backend
 
 #### Setup Api
  - There can be issues with composer require, you can try to add it manually, and above laravel in composer, can help:)
  - https://github.com/nodes-php/api
- - Right now all the scaffolding is disabled for API. But you can find the files in the vendor/nodes/api - Morten is working on getting the command up again, else take it from another project 
+ - API scaffolding is located in it's own repository: https://github.com/nodes-php/api-scaffolding (see docs on repository on how to execute the scaffolding commands)
  
 #### .gitignore
 ```

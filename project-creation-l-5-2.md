@@ -13,7 +13,7 @@ Project is now running!
 - Add following to config/app.php
 ```
   /**
-   * Orchesra Service Providers
+   * Orchestra Service Providers
    */
   Orchestra\Debug\DebugServiceProvider::class,
   Orchestra\Debug\CommandServiceProvider::class,

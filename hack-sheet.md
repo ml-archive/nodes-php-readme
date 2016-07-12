@@ -12,3 +12,8 @@ git add -A
 git reset —hard
 git pull
 ```
+#### Having problems with time on local machine, fx can't update files to S3
+```
+sudo ntpdate manager.ournodes.com
+```
+

@@ -1,5 +1,7 @@
 How to implement end user reset password feature:
 
+NOTE: By using the nodes/scaffolding repo, this can be added auto 
+
 * Set your user model in config: 
 
 ```

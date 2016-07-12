@@ -1,0 +1,10 @@
+ - guzzlehttp/guzzle, should be used instead of curl
+    - http://guzzle.readthedocs.io/
+ - nesbot/carbon, should be used instead of Date/DateTime (included in laravel)
+    - http://carbon.nesbot.com/docs/
+ - barryvdh/laravel-cors, used for CORS (browsers accessing apis)
+    - https://github.com/barryvdh/laravel-cors
+ - orchestra/debug, used for testing db queries
+    - https://github.com/orchestral/debug 
+ - maatwebsite/excel, used for xls/excel import/export
+    - https://github.com/Maatwebsite/Laravel-Excel

@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'no-reply@nodes.dk', 'name' => 'Nodes'], // @TODO REPLACE
+    'from' => ['address' => 'no-reply@like.st', 'name' => 'Nodes'], // @TODO REPLACE
 
     /*
     |--------------------------------------------------------------------------

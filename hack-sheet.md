@@ -18,8 +18,9 @@ sudo ntpdate manager.ournodes.com
 ```
 
 ####Authorization header cannot be found in Laravel, but through apache getallheaders()
-public\.htaccess in the <IfModule mod_rewrite.c>
 ```
+    public\.htaccess in the <IfModule mod_rewrite.c>
+    
     # Pass Authorization header with request
     # (known php-cgi bug)
     RewriteCond %{HTTP:Authorization} ^(.+)$

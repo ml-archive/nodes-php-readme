@@ -6,6 +6,7 @@
 
 #### Require new laravel packages:
 `laravel/framework": "5.3.*`
+
 `laravelcollective/html": "5.3.*`
 
 ##### Update: 

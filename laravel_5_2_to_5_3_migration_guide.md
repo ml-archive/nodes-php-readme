@@ -54,3 +54,12 @@
  - Changed all queue closures to dispatch(new MyJob())
  - The old “sometimes” validation rule for fields that can be null, no longer works. It should be changed to “nullable".
  - Mail::send is a void, so don't check the return of that anymore
+ - If you are using the Maatwebsite/Laravel-Excel package (https://github.com/Maatwebsite/Laravel-Excel) for handling import and export of excel/csv files you need to remove the LaravelCollective/bus package required by the laravel 5.2 branch. Simply remove the provider in config/app.php
+ 
+```php
+/**
+ * Excel
+ */
+// Collective\Bus\BusServiceProvider::class,
+Maatwebsite\Excel\ExcelServiceProvider::class,
+```

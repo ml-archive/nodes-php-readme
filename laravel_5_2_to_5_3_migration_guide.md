@@ -63,3 +63,7 @@
 // Collective\Bus\BusServiceProvider::class,
 Maatwebsite\Excel\ExcelServiceProvider::class,
 ```
+
+```shell
+-> composer remove laravelcollective/bus
+```

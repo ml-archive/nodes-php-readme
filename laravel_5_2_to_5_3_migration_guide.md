@@ -68,3 +68,7 @@ Maatwebsite\Excel\ExcelServiceProvider::class,
 ```shell
 -> composer remove laravelcollective/bus
 ```
+
+#### Finally
+Make sure to double check with the official [migration guide](https://laravel.com/docs/5.3/upgrade#upgrade-5.3.0)
+

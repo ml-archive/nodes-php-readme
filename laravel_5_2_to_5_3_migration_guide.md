@@ -69,6 +69,8 @@ Maatwebsite\Excel\ExcelServiceProvider::class,
 -> composer remove laravelcollective/bus
 ```
 
+- Createa a new failed-jobs table or update it
+
 #### Finally
 Make sure to double check with the official [migration guide](https://laravel.com/docs/5.3/upgrade#upgrade-5.3.0)
 

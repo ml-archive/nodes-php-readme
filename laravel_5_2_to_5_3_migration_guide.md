@@ -1,0 +1,52 @@
+### Migrate project from Laravel 5.2.* to 5.3.*
+
+#### Require new laravel packages:
+`laravel/framework": "5.3.*`
+`laravelcollective/html": "5.3.*`
+
+##### Update: 
+
+```shell
+-> composer update
+```
+
+**NB: Composer update will fail**
+
+#### Update providers
+##### Remove boot() param in `app/Providers/EventServiceProvider.php`
+
+```php
+    /**
+     * Register any other events for your application.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        parent::boot();
+    }
+```
+
+##### Remove boot() param in `app/Providers/RouteServiceProvider.php`
+
+```php
+    /**
+     * Define your route model bindings, pattern filters, etc.
+     *
+     */
+    public function boot()
+    {
+        parent::boot();
+    }
+```
+
+##### Update
+```shell
+-> composer update
+```
+
+#### Additional notes
+ - If you are still using an Mcrypt based cipher in your config/app.php configuration file, you should update the cipher to AES-256-CBC and set your key to a random 32 byte string which may be securely generated using php artisan key:generate.
+ - Changed all queue closures to dispatch(new MyJob())
+ - I suggest you start looking at upgrading your current projects. For smaller projects this should be <1 H. And should be done asap!
+ - The old “sometimes” validation rule for fields that can be null, no longer works. It should be changed to “nullable".

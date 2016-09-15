@@ -4,4 +4,8 @@
 
 3. click on 'View keys' button
 
-4. Copy 'Application Id' and 'Master key' to `/htdocs/config/nodes/backend/nstack.php`
+4. Copy 'Application Id' and 'Master key' to `/htdocs/config/nodes/backend/nstack.php` -> 'credentials'
+
+5. Commit and push changes
+
+6. Deploy

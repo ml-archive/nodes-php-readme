@@ -8,3 +8,5 @@
     - https://github.com/orchestral/debug 
  - maatwebsite/excel, used for xls/excel import/export
     - https://github.com/Maatwebsite/Laravel-Excel
+ - Lib phone number, also has a Laravel connector. Amazing for dealing with unknown phone number formats
+    - https://github.com/giggsey/libphonenumber-for-php

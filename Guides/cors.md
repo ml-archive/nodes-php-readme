@@ -38,6 +38,7 @@ return [
 ```
 
 4) Setup middleware
+
 Global middleware is the easist solution, else if you have a api group
 
 in app/Http/Kernel.php

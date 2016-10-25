@@ -6,7 +6,9 @@ Setup this plugin:
 https://github.com/barryvdh/laravel-cors
 
 1) composer require
+
 2) Setup Service provider
+
 3) Copy config
 
 Consider using widcares in all configs ['*'] to make it as easy as possible

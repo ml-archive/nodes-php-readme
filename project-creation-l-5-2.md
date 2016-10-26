@@ -42,6 +42,9 @@ Project is now running!
  - https://github.com/nodes-php/api
  - API scaffolding is located in it's own repository: https://github.com/nodes-php/api-scaffolding (see docs on repository on how to execute the scaffolding commands)
  
+#### Setup CORS for web projects
+ - Follow the instructions in [the CORS guide](https://github.com/nodes-php/readme/blob/master/Guides/cors.md)
+ 
 #### .gitignore
 ```
 .idea/

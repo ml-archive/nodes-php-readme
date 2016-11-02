@@ -5,11 +5,11 @@ For all web projects setting up CORS is needed for browsers to communicate with 
 Setup this plugin:
 https://github.com/barryvdh/laravel-cors
 
-1) composer require
+## 1) composer require
 
-2) Setup Service provider
+## 2) Setup Service provider
 
-3) Copy config
+## 3) Copy config
 
 Consider using widcares in all configs ['*'] to make it as easy as possible
 ```
@@ -37,16 +37,15 @@ return [
 
 ```
 
-4) Setup middleware
+## 4) Setup middleware
 
 Global middleware is the easist solution, else if you have a api group
 
 in app/Http/Kernel.php
 ```
-
 protected $middleware = [
     \Barryvdh\Cors\HandleCors::class
 ];
-
-6) Test
-http://codepen.io/dennishn/pen/BLbYyJ
+```
+## 5) Test
+[Native js cors tester](http://codepen.io/dennishn/pen/BLbYyJ)

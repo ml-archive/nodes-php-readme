@@ -2,7 +2,6 @@ After running nodes create project follow these steps to setup rest of you proje
 
 ### Get project running
 - Add the project to your hosts file (192.168.10.15 demo.local-like.st)
-- pa key:generate (will generate the APP_KEY in your env file, remember to add this to nstack.like.st)
 
 Project is now running!
 

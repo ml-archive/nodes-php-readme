@@ -18,6 +18,8 @@ https://laravel.com/docs/5.4/homestead
 
 Follow the guide to setup projects
 
+[TODO MORE HERE]
+
 Note: if you have the Nodes forked homestead, it works fine also (https://github.com/nodes-cloud/homestead)
 
 

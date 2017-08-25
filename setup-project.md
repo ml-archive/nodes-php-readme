@@ -22,5 +22,7 @@ Follow the guide to setup projects
 
 Note: if you have the Nodes forked homestead, it works fine also (https://github.com/nodes-cloud/homestead)
 
-
+### 
+Needing .env file [private file sorry]
+https://github.com/nodes-projects/readme/blob/master/laravel/env.md
 

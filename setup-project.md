@@ -61,6 +61,11 @@ databases:
 
 ```
 
+password for the mysql on homestead is
+u: homestead
+p: secret
+
+#### Nodes homestead (Deprecated)
 Note: if you have the Nodes forked homestead, it works fine also [private file sorry]
 https://github.com/nodes-cloud/homestead
 

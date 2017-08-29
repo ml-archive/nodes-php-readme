@@ -40,8 +40,12 @@ folders:
       to: /var/www
 
 sites:
+    - map: pma.local-like.st
+      to: /var/www/phpmyadmin
+
     - map: riide.local-like.st
       to: /var/www/riide/htdocs/public
+      php: "7.0"
 
 databases:
     - homestead

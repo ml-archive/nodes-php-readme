@@ -45,31 +45,17 @@ sites:
 
 databases:
     - homestead
-
-# blackfire:
-#     - id: foo
-#       token: bar
-#       client-id: foo
-#       client-token: bar
-
-# ports:
-#     - send: 50000
-#       to: 5000
-#     - send: 7777
-#       to: 777
-#       protocol: udp
-
 ```
 
 password for the mysql on homestead is
 u: homestead
 p: secret
 
-#### Nodes homestead (Deprecated)
-Note: if you have the Nodes forked homestead, it works fine also [private file sorry]
-https://github.com/nodes-cloud/homestead
+[.env](https://github.com/nodes-projects/readme/tree/master/laravel)
 
-### .env
-Needing .env file [private file sorry]
-https://github.com/nodes-projects/readme/blob/master/laravel/env.md
+#### Nodes homestead (Deprecated)
+[Guide](https://github.com/nodes-cloud/homestead)
+[.Env](https://github.com/nodes-projects/readme/blob/master/laravel/nhomestead-env-deprecated)
+
+
 

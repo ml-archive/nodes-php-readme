@@ -1,4 +1,9 @@
-# General
+# Getting started
+ - [Setup environment](#)
+ - [Setup project](#)
+ - [Guides](#)
+
+## General
 
 This checklist describes mandatory procedures for every project in development, before they go in production and before an update is deployed to production in general.
 

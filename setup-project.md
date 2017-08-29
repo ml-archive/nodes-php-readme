@@ -68,6 +68,16 @@ Install PMA
 PMA_VERSION=4.6.6 && cd /var/www && wget https://files.phpmyadmin.net/phpMyAdmin/$PMA_VERSION/phpMyAdmin-$PMA_VERSION-all-languages.zip && unzip phpMyAdmin-*-all-languages.zip && mv phpMyAdmin-*-all-languages phpmyadmin && rm ./phpMyAdmin-*-all-languages.zip
 ```
 
+Install tig
+```
+sudo apt-get install tig
+```
+
+Install gitflow
+```
+sudo apt-get install git-flow
+```
+
 #### Nodes homestead - Apache instead of NGinx (Deprecated)
 [Guide](https://github.com/nodes-cloud/homestead)
 

@@ -55,7 +55,7 @@ password for the mysql on homestead is
 u: homestead
 p: secret
 
-[.env](https://github.com/nodes-projects/readme/tree/master/laravel)
+[Link to .env](https://github.com/nodes-projects/readme/blob/master/laravel/homestead-env.md)
 
 Ex of .hosts file
 ```
@@ -81,7 +81,7 @@ sudo apt-get install git-flow
 #### Nodes homestead - Apache instead of NGinx (Deprecated)
 [Guide](https://github.com/nodes-cloud/homestead)
 
-[.Env](https://github.com/nodes-projects/readme/blob/master/laravel/nhomestead-env-deprecated)
+[Link to .env](https://github.com/nodes-projects/readme/blob/master/laravel/nhomestead-env-deprecated)
 
 
 

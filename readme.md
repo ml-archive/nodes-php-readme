@@ -7,7 +7,7 @@
 
 This checklist describes mandatory procedures for every project in development, before they go in production and before an update is deployed to production in general.
 
-Folder structure
+### Folder structure
 
 - All project specific classes will be in &quot;project&quot;
 - Console, which have Commands &amp; Jobs, if you have Commands/Jobs which are not bind to one model, else put them in these folders
@@ -26,7 +26,7 @@ Folder structure
   - Validation, for validators
   - Support, for helpers, DTOs, Requests etc.
 
-Documentation/comments
+### Documentation/comments
 
 - All projects should use barryvdh/laravel-ide-helper to have all properties and providers setup for auto-complete
 - All function have a docblock with following
@@ -41,7 +41,7 @@ Documentation/comments
 - All custom configs have a description
 - Comment your code, use it as a break between code groups
 
-Code style/Git/Collaborating with colleagues
+### Code style/Git/Collaborating with colleagues
 
 - Enforce the code standard PSR-2. This will help others to quickly get an overview of your code.
 - Code as strict as possible, since php7 enforce all inputs and return types, and use exceptions for other cases. Use strict model types if you need a specific Id, instead of just accepting integers
@@ -50,16 +50,16 @@ Code style/Git/Collaborating with colleagues
 - Try to keep your git repositories as clean as possible.
 - Remember that you&#39;re not the only person to read and understand your work.
 
-Migrations and seeders
+### Migrations and seeders
 
 - All projects are using migrations and seeders/factories. You should always be able to checkout a project and do &quot;pa migrate:refresh --seed and have it up running
 
-Important requests to 3rd parties
+### Important requests to 3rd parties
 
 - When the importance of sending a push, charging money or firing important api call triggered by events. Always create datetimes in the table for when it was tried, when it was succeeded, when it was failed and a log. This way you can easy integrate a retry system and you will know if something went wrong, without looking through 100k lines of log.
 - example sent\_at, succeeded\_at, failed\_at &amp; log. json\_encode the response of the api call or the exception in.
 
-Models
+### Models
 
 - Always use following global variables
   - fillable
@@ -70,9 +70,9 @@ Models
 - Always set up relations
 - Really consider not using hasManyThrough, you always need that pivot model for observers, extra fields etc
 
-Caching strategies
+### Caching strategies
 
-Rules of thumb for considering caching:
+### Rules of thumb for considering caching:
 
 - When a response is the same for all users it should be cached.
 - When a large portion (~35% of the data) of a response is the same for all users, that portion should be cached.
@@ -81,7 +81,7 @@ Rules of thumb for considering caching:
 - Remember to clear cache on data changes, use observers for this
 - Use the nodes cache pattern, it&#39;s easy for others to check what is cached for how long, and gives some easiness of passing params as cache keys
 
-Queueing
+### Queueing
 
 Considerations for Gearman/Beanstalkd queueing routines
 
@@ -92,7 +92,7 @@ Considerations for Gearman/Beanstalkd queueing routines
   - Use different queues for, if you have queue tasks taking long time, and tasks which are super important to run fast, a good pattern is to always use \Queue::pushOn(Queues::NAME\_OF\_QUEUE, $job), and keep all your queues in one file as constants
   - failed\_jobs table is ALWAYS added, and retry on queues is default 1
 
-Database
+### Database
 
 - Select specific columns instead of all (\*).
 - Ensure your database changes are aggregated to the production environment.
@@ -100,13 +100,13 @@ Database
   - Eg. follower lists, posts, likes, etc.
 - Use eager loading
 
-Exceptions/Bugsnag
+### Exceptions/Bugsnag
 
 - Bugsnag is a tool to collect exception from staging/live, it&#39;s very powerfull and should be used on all projects
 - Not all exceptions should be written to bugsnag. Remember to analyze all thrown exceptions and evaluate if you need this in. Use the dontReport()/report() functions
 - Exceptions will get grouped Exception namespace (you can group them by message), but use as many Custom exceptions as possible extending the nodes exception
 
-Test
+### Test
 
 - All projects will have use phpunit to test (new from 1/6 - 2016)
  - controllers
@@ -117,12 +117,28 @@ Test
  - support
  - all project specific which can be tested
 
-Optimization
+### Optimization
 
 - Network in request is always bad, if it&#39;s needed consider if it&#39;s possible to cache. If you can put it in a queue, do so, fx for mail/push/sms
 - Database queries is often the slowest part of the request. Use &quot;pa debug&quot; to check how many you do, and how big they are. Consider selects, eagerload and cache
 - Check bugsnag daily when you have frontend/mobile working, consider setting it up to mail you on new exception during development. It&#39;s cool to fix the bugs before they create the tickets
 
-Process 
+### Process 
 
 - TDD
+
+### Check before each commit
+
+- unit tests
+
+- php doc
+
+- PHP 7 type hinting (for functions input and return value)
+
+### Check before release
+
+- setup [CORS](https://github.com/nodes-php/readme/blob/master/Guides/cors.md) when you build APIs for the Frontend team (Webapp or Ionic apps) 
+
+- ensure only SSL calls are allowed on production env
+
+- Ensure N-Meta header is required on API requests

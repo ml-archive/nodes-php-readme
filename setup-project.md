@@ -64,8 +64,9 @@ Install PMA
 PMA_VERSION=4.6.6 && cd /var/www && wget https://files.phpmyadmin.net/phpMyAdmin/$PMA_VERSION/phpMyAdmin-$PMA_VERSION-all-languages.zip && unzip phpMyAdmin-*-all-languages.zip && mv phpMyAdmin-*-all-languages phpmyadmin && rm ./phpMyAdmin-*-all-languages.zip
 ```
 
-#### Nodes homestead (Deprecated)
+#### Nodes homestead - Apache instead of NGinx (Deprecated)
 [Guide](https://github.com/nodes-cloud/homestead)
+
 [.Env](https://github.com/nodes-projects/readme/blob/master/laravel/nhomestead-env-deprecated)
 
 

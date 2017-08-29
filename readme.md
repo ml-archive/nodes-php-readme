@@ -1,7 +1,7 @@
 # Getting started
- - [Setup environment](#)
- - [Setup project](#)
- - [Guides](#)
+ - [Setup environment](https://github.com/nodes-php/readme/blob/master/Guides/Setup/setup-local-environment.md)
+ - [Setup project](https://github.com/nodes-php/readme/blob/master/Guides/Setup/setup-project.md)
+ - [Guides](https://github.com/nodes-php/readme/tree/master/Guides)
 
 ## General
 

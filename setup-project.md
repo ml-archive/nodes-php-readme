@@ -18,9 +18,10 @@ https://laravel.com/docs/5.4/homestead
 
 Follow the guide to setup projects
 
-[TODO MORE HERE]
+VirtualBox 5.1 is preffered
 
-Note: if you have the Nodes forked homestead, it works fine also (https://github.com/nodes-cloud/homestead)
+Note: if you have the Nodes forked homestead, it works fine also [private file sorry]
+https://github.com/nodes-cloud/homestead
 
 ### .env
 Needing .env file [private file sorry]

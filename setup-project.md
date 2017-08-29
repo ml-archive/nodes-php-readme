@@ -22,7 +22,7 @@ Notes:
 
 VirtualBox 5.1 is preffered
 
-ex of .yaml file with mapping to old urls (local-like.st)
+Ex of Homestead.yaml
 ```
 ---
 ip: "192.168.10.10"
@@ -52,6 +52,17 @@ u: homestead
 p: secret
 
 [.env](https://github.com/nodes-projects/readme/tree/master/laravel)
+
+Ex of .hosts file
+```
+192.168.10.10 riide.local-like.st
+192.168.10.10 pma.local-like.st
+```
+
+Install PMA
+```
+PMA_VERSION=4.6.6 && cd /var/www && wget https://files.phpmyadmin.net/phpMyAdmin/$PMA_VERSION/phpMyAdmin-$PMA_VERSION-all-languages.zip && unzip phpMyAdmin-*-all-languages.zip && mv phpMyAdmin-*-all-languages phpmyadmin && rm ./phpMyAdmin-*-all-languages.zip
+```
 
 #### Nodes homestead (Deprecated)
 [Guide](https://github.com/nodes-cloud/homestead)

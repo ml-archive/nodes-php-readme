@@ -1,4 +1,4 @@
-# Setting up a PHP 5 project with Laravel 4
+# Setting up a PHP 5 project with Laravel 5
 
 ### git clone the project into nodes-projects folder
 `git clone [URL]` 

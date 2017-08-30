@@ -2,6 +2,8 @@
  - [Setup environment](https://github.com/nodes-php/readme/blob/master/Guides/Setup/setup-local-environment.md)
  - [Setup project](https://github.com/nodes-php/readme/blob/master/Guides/Setup/setup-project.md)
  - [Guides](https://github.com/nodes-php/readme/tree/master/Guides)
+ - [Hack sheet](https://github.com/nodes-php/readme/blob/master/hack-sheet.md)
+ - [Prefered Packages](https://github.com/nodes-php/readme/blob/master/prefered-packages.md)
 
 ## General
 

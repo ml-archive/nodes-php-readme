@@ -1,5 +1,8 @@
 # Setting up a PHP 5 project with Laravel 5
 
+We expect that NLocal Vagrant Virtual machine is setup
+Else follow [Link](https://github.com/nodes-php/readme/blob/master/Guides/Setup/setup-php5-local-enviroment.md)
+
 ### git clone the project into nodes-projects folder
 `git clone [URL]` 
 

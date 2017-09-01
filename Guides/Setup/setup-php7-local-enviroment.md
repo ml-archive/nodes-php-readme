@@ -106,7 +106,7 @@ sudo apt-get install php7.1 php7.1-mcrypt php7.1-mbstring php7.1-json php7.1-mys
 
  `sudo mkdir -p /etc/nodes/ssl/local-like.st`
 
- - Create file `vim /etc/nodes/ssl/local-like.st/star.local-like.st.pem`
+ - Create file `sudo vim /etc/nodes/ssl/local-like.st/star.local-like.st.pem`
 
  ```
 -----BEGIN CERTIFICATE----- 
@@ -209,7 +209,7 @@ pu/xO28QOG8=
 -----END CERTIFICATE-----
  ```
 
-- Create file `vim /etc/nodes/ssl/local-like.st/star.local-like.st.key`
+- Create file `sudo vim /etc/nodes/ssl/local-like.st/star.local-like.st.key`
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
@@ -260,7 +260,7 @@ ssl_certificate_key /etc/nodes/ssl/local-like.st/star.local-like.st.key;
 
 Restart nginx
 
-`sudo service nginx restart`
+`sudo service nginx restart
 
 ### Nodes homestead - Apache instead of NGinx (Deprecated)
 [Guide](https://github.com/nodes-cloud/homestead)

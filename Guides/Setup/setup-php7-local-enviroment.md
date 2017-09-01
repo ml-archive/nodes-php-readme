@@ -259,7 +259,8 @@ ssl_certificate_key /etc/nodes/ssl/local-like.st/star.local-like.st.key;
 ```
 
 Restart nginx
-`sudo service nginx restart`
+
+`sudo service nginx restart
 
 ### Nodes homestead - Apache instead of NGinx (Deprecated)
 [Guide](https://github.com/nodes-cloud/homestead)

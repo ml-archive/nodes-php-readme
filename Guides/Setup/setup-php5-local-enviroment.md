@@ -1,6 +1,6 @@
 # PHP 5 local env
 
-We have our own configured vagrant here
+We have our own configured vagrant `ndev-php55-vagrant`
 
 [Link](https://github.com/nodes-projects/ndev-php55-vagrant)
 

@@ -1,6 +1,5 @@
 # Setting up a PHP 7 project with Laravel 5.1+
 
-We have 4 generation of PHP applications in Nodes
 We expect that Laravels Homestead Vagrant Virtual machine is setup
 Else follow [Link](https://github.com/nodes-php/readme/blob/master/Guides/Setup/setup-php7-local-enviroment.md)
 

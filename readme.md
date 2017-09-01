@@ -15,11 +15,11 @@ This checklist describes mandatory procedures for every project in development, 
 - Console, which have Commands &amp; Jobs, if you have Commands/Jobs which are not bind to one model, else put them in these folders
 - Controllers, have subfolders for Api, Backend &amp; Frontend, each of them can have controllers directly added or have even deeper structure
 - Exceptions, if you have global exceptions for your project
-- Routes, which have folders for Api, Backend &amp; Frontend, you can add a many subfolders you want in here, they load recursive
-- Services, all 3rd party integrations. Create a folder for it, fx Google. If you are doing api calls in your service, use Guzzle. Create clients and models so everything coming in our out of your clients is models
-- Support, this is the &quot;others&quot; folder. But all helpers, global contracts, middlewares etc here.
+- Routes, which have folders for Api, Backend &amp; Frontend, you can add as many subfolders you want in here, they load recursive
+- Services, all 3rd party integrations. Create a folder for it, fx Google. If you are doing api requests in your service, use Guzzle. Create clients and models so everything coming in our out of your clients is models
+- Support, this is the &quot;others&quot; folder. Put all helpers, global contracts, middlewares etc here.
 - All folders are plural if it makes sense(Like Laravel does it), Controllers, Models, Routes, Exceptions
-- In models each you create a folder in plural for each parent model, a model folder fx Users following folders can be
+- In models you should create a folder in plural for each parent model, a model folder fx Users following folders can be
   - Model and Repository
   - Other 1:1 / 1:n related model folders, fx Tokens,
   - Exceptions, specific exception for this model
@@ -58,8 +58,8 @@ This checklist describes mandatory procedures for every project in development, 
 
 ### Important requests to 3rd parties
 
-- When the importance of sending a push, charging money or firing important api call triggered by events. Always create datetimes in the table for when it was tried, when it was succeeded, when it was failed and a log. This way you can easy integrate a retry system and you will know if something went wrong, without looking through 100k lines of log.
-- example sent\_at, succeeded\_at, failed\_at &amp; log. json\_encode the response of the api call or the exception in.
+- When the importance of sending a push, charging money or firing important api request triggered by events. Always create datetimes in the table for when it was tried, when it was succeeded, when it was failed and a log. This way you can easy integrate a retry system and you will know if something went wrong, without looking through 100k lines of log.
+- example sent\_at, succeeded\_at, failed\_at &amp; log. json\_encode the response of the api request or the exception in.
 
 ### Models
 
@@ -74,7 +74,7 @@ This checklist describes mandatory procedures for every project in development, 
 
 ### Caching strategies
 
-### Rules of thumb for considering caching:
+#### Rules of thumb for considering caching:
 
 - When a response is the same for all users it should be cached.
 - When a large portion (~35% of the data) of a response is the same for all users, that portion should be cached.
@@ -104,13 +104,13 @@ Considerations for Gearman/Beanstalkd queueing routines
 
 ### Exceptions/Bugsnag
 
-- Bugsnag is a tool to collect exception from staging/live, it&#39;s very powerfull and should be used on all projects
+- Bugsnag is a tool to collect exceptions from staging/live, it&#39;s very powerfull and should be used on all projects
 - Not all exceptions should be written to bugsnag. Remember to analyze all thrown exceptions and evaluate if you need this in. Use the dontReport()/report() functions
-- Exceptions will get grouped Exception namespace (you can group them by message), but use as many Custom exceptions as possible extending the nodes exception
+- Exceptions will get grouped by Exception namespace (you can group them by message), but use as many Custom exceptions as possible extending the nodes exception
 
 ### Test
 
-- All projects will have use phpunit to test (new from 1/6 - 2016)
+- All projects will use phpunit to test (new from 1/6 - 2016)
  - controllers
  - model functions
  - repositories

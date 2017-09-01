@@ -244,7 +244,7 @@ q9YP0CrGpjDwXKH0BN6W41MTIZSfZSn3fubTf+nsldbkCyBAQTbJ
 #### Enable certificate for your site
 Edit you site's config
 
-`vim /etc/nginx/sites-enabled/[your-project].local-like.st`
+`sudo vim /etc/nginx/sites-enabled/[your-project].local-like.st`
 
 Replace:
 ```

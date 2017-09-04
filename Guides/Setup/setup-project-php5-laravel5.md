@@ -8,7 +8,7 @@ Else follow [Link](https://github.com/nodes-php/readme/blob/master/Guides/Setup/
 `git clone [URL]` 
 
 ### Htdocs
-move the source code into a htdoc folder
+move the source code into a htdocs folder
 
 ### Fix project
 use the nodes command to "fix project" which sets up apache config and database

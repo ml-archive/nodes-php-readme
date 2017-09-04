@@ -245,7 +245,7 @@ q9YP0CrGpjDwXKH0BN6W41MTIZSfZSn3fubTf+nsldbkCyBAQTbJ
 Homestead checks for certificates on all sites upon provisioning. To avoid Homestead overriding the cerficate configuration for existing sites, first remove any certficates made by vagrant provision for the configured site
 
 ```
-rm -r /etc/nginx/ssl/[project].local-like.st.*
+sudo rm -r /etc/nginx/ssl/[project].local-like.st.*
 ```
 
 Then create three symbolic links for your site.

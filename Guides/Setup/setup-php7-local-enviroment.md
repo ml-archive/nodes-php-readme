@@ -242,30 +242,18 @@ q9YP0CrGpjDwXKH0BN6W41MTIZSfZSn3fubTf+nsldbkCyBAQTbJ
 ```
 
 #### Enable certificate for your site
-Edit you site's config
+Homestead checks for certicates on all sites upon provisioning. To avoid Homestead overriding your cerficate configuration create three symbolic links for each of your sites.
 
-`sudo vim /etc/nginx/sites-enabled/[your-project].local-like.st`
-
-Replace:
 ```
-ssl_certificate /etc/nginx/ssl/[your-project].local-like.st.crt;
-ssl_certificate_key /etc/nginx/ssl/[your-project].local-like.st.key;
+ln -s /etc/nodes/ssl/local-like.st/star.local-like.st.pem /etc/nginx/ssl/[project].local-like.st.crt
+ln -s /etc/nodes/ssl/local-like.st/star.local-like.st.key /etc/nginx/ssl/[project].local-like.st.key
+ln -s /etc/nodes/ssl/local-like.st/star.local-like.st.pem /etc/nginx/ssl/[project].local-like.st.cnf
 ```
 
-With:
-```
-ssl_certificate /etc/nodes/ssl/local-like.st/star.local-like.st.pem;
-ssl_certificate_key /etc/nodes/ssl/local-like.st/star.local-like.st.key;
-```
+Replace [project] with the name of your site.
+
+**Important** Remember to do this for PhpMyAdmin as well
 
 Restart nginx
 
 `sudo service nginx restart`
-
-### Nodes homestead - Apache instead of NGinx (Deprecated)
-[Guide](https://github.com/nodes-cloud/homestead)
-
-[Link to .env](https://github.com/nodes-projects/readme/blob/master/laravel/nhomestead-env-deprecated)
-
-
-

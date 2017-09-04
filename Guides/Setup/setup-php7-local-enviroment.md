@@ -250,8 +250,6 @@ This command should be executed every time a new site is provisioned.
 sudo find /etc/nginx/sites-available/ -type f -exec sed -i "s/\/etc\/nginx\/ssl\/\(.*\)\.local-like\.st\.crt/\/etc\/nodes\/ssl\/local-like\.st\/star\.local-like\.st\.pem/g" {} \; && sudo find /etc/nginx/sites-available/ -type f -exec sed -i "s/\/etc\/nginx\/ssl\/\(.*\)\.local-like\.st\.key/\/etc\/nodes\/ssl\/local-like\.st\/star\.local-like\.st\.key/g" {} \;
 ```
 
-Replace [project] with the name of your site.
-
 **Important** Remember to do this for PhpMyAdmin as well
 
 Restart nginx

@@ -242,18 +242,12 @@ q9YP0CrGpjDwXKH0BN6W41MTIZSfZSn3fubTf+nsldbkCyBAQTbJ
 ```
 
 #### Enable certificate for your site
-Homestead checks for certificates on all sites upon provisioning. To avoid Homestead overriding the cerficate configuration for existing sites, first remove any certficates made by vagrant provision for the configured site
+Homestead checks for certificates on all sites upon provisioning. To avoid Homestead overriding the cerficate configuration for existing sites, replace certificate references for all your sites.
+
+This command should be executed every time a new site is provisioned.
 
 ```
-sudo rm -r /etc/nginx/ssl/[project].local-like.st.*
-```
-
-Then create three symbolic links for your site.
-
-```
-sudo ln -s /etc/nodes/ssl/local-like.st/star.local-like.st.pem /etc/nginx/ssl/[project].local-like.st.crt
-sudo ln -s /etc/nodes/ssl/local-like.st/star.local-like.st.key /etc/nginx/ssl/[project].local-like.st.key
-sudo ln -s /etc/nodes/ssl/local-like.st/star.local-like.st.pem /etc/nginx/ssl/[project].local-like.st.cnf
+sudo find /etc/nginx/sites-enabled/ -type f -exec sed -i "s/\/etc\/nginx\/ssl\/\(.*\)\.local-like\.st\.crt/\/etc\/nodes\/ssl\/local-like\.st\/star\.local-like\.st\.pem/g" {} \; && sudo find /etc/nginx/sites-enabled/ -type f -exec sed -i "s/\/etc\/nginx\/ssl\/\(.*\)\.local-like\.st\.key/\/etc\/nodes\/ssl\/local-like\.st\/star\.local-like\.st\.key/g" {} \;
 ```
 
 Replace [project] with the name of your site.

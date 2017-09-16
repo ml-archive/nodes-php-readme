@@ -10,7 +10,7 @@ Else follow [Link](https://github.com/nodes-php/readme/blob/master/Guides/Setup/
 `composer install`
 
 ### Setup .env
-[Example of .env](https://github.com/nodes-projects/readme/blob/master/laravel/homestead-env.md)
+[Example of .env](https://github.com/nodes-projects/readme/blob/master/server-side/laravel/homestead-env.md) (Private link)
 
 ### Setup site in `Homestead.yaml`
 

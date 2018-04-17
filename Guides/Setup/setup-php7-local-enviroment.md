@@ -55,7 +55,7 @@ password for the mysql on homestead is
 u: homestead
 p: secret
 
-[Link to .env](https://github.com/nodes-projects/readme/blob/master/laravel/homestead-env.md)
+[Link to .env](https://github.com/nodes-projects/readme/blob/master/server-side/laravel/homestead-env.md)
 
 Ex of .hosts file
 ```

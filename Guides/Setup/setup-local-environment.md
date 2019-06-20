@@ -10,5 +10,5 @@ We have 4 generation of PHP applications in Nodes
 For everything newer than, we have following suggestions
 
  - [Homestead](https://laravel.com/docs/5.8/homestead) 
- - [Valet] (https://laravel.com/docs/5.8/valet)
- - [Docker] (https://www.docker.com/)
+ - [Valet](https://laravel.com/docs/5.8/valet)
+ - [Docker](https://www.docker.com/)
